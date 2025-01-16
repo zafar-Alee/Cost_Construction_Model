@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="80dp"
+    app:cardBackgroundColor="#4527A0">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Row for Headers -->
+
+        <TextView
+            android:id="@+id/box1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/box2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="V.Low"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/box3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.2" />
+
+            <TextView
+                android:id="@+id/box3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="Low"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/box4"
+                app:layout_constraintStart_toEndOf="@+id/box2"
+                app:layout_constraintWidth_percent="0.2" />
+
+            <TextView
+                android:id="@+id/box4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="Normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/box5"
+                app:layout_constraintStart_toEndOf="@+id/box3"
+                app:layout_constraintWidth_percent="0.2" />
+
+            <TextView
+                android:id="@+id/box5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="High"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/box6"
+                app:layout_constraintStart_toEndOf="@+id/box4"
+                app:layout_constraintWidth_percent="0.2" />
+
+            <TextView
+                android:id="@+id/box6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="V.High"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/box5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Row for Values -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/value2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:minWidth="48dp"
+                android:singleLine="true"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/value3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.2" />
+
+            <CheckBox
+                android:id="@+id/value3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:minWidth="48dp"
+                android:singleLine="true"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/value4"
+                app:layout_constraintStart_toEndOf="@+id/value2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.2" />
+
+            <CheckBox
+                android:id="@+id/value4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:minWidth="48dp"
+                android:singleLine="true"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/value5"
+                app:layout_constraintStart_toEndOf="@+id/value3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.2" />
+
+            <CheckBox
+                android:id="@+id/value5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:minWidth="48dp"
+
+                android:singleLine="true"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/value6"
+                app:layout_constraintStart_toEndOf="@+id/value4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.2" />
+
+            <CheckBox
+                android:id="@+id/value6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:minWidth="48dp"
+                android:singleLine="true"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/value5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

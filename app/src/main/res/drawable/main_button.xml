@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <!-- Overlay layer for shadow effect -->
+    <item android:left="2dp" android:right="2dp" android:top="2dp" android:bottom="2dp">
+        <shape>
+            <solid android:color="#6600FF" /> <!-- Semi-transparent black for shadow -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+
+    <!-- Foreground layer for texture effect -->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#25A1F9"
+            android:endColor="#02BDAD"
+            android:angle="90" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+
+
+    <item>
+        <shape>
+            <solid android:color="#00FFFFFF" />
+            <corners android:radius="16dp" />
+            <stroke android:width="3dp" android:color="#42FF17" />
+        </shape>
+    </item>
+
+</layer-list>
